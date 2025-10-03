@@ -21,7 +21,7 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5000,
-    allowedHosts: ['.replit.dev', '.replit.app'],
+    allowedHosts: ['.replit.dev', '.replit.app','.aetherwavestudio.com'],
     hmr: {
       clientPort: 443,
     },
@@ -29,7 +29,7 @@ export default defineConfig({
   preview: {
     host: '0.0.0.0',
     port: 5000,
-    allowedHosts: ['.replit.dev', '.replit.app'],
+    allowedHosts: ['.replit.dev', '.replit.app', '.aetherwavestudio.com'],
   },
 })
 
