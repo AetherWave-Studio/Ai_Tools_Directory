@@ -9,7 +9,7 @@ function AboutPage() {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-poppins font-bold text-gray-900 mb-6">
-            About <span className="text-purple-600">AIverse</span>
+            About <span className="text-purple-600">AetherWave</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Your comprehensive directory of 1000+ AI tools, curated to help you discover 
@@ -26,13 +26,13 @@ function AboutPage() {
             <h2 className="text-2xl font-poppins font-bold text-gray-900">Our Mission</h2>
           </div>
           <p className="text-gray-600 leading-relaxed mb-4">
-            At AIverse, we believe artificial intelligence should be accessible to everyone. 
+            At AetherWave Studio, we believe artificial intelligence should be accessible to everyone. 
             Our mission is to bridge the gap between innovative AI solutions and the people 
             who need them most.
           </p>
           <p className="text-gray-600 leading-relaxed">
             We carefully curate and categorize the best AI tools available, making it easy 
-            for professionals, entrepreneurs, students, and curious minds to find the right 
+            for artists, entrepreneurs, students, and curious minds to find the right 
             AI solution for their specific needs.
           </p>
         </div>
@@ -44,10 +44,10 @@ function AboutPage() {
               <div className="p-3 bg-blue-100 rounded-full mr-4">
                 <Globe className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="text-xl font-poppins font-bold text-gray-900">What is AIverse</h3>
+              <h3 className="text-xl font-poppins font-bold text-gray-900">What is AetherWave Studio</h3>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              AIverse is the world's most comprehensive directory of AI tools and platforms. 
+              AEtherWave provides the world's most comprehensive directory of AI tools and platforms. 
               We've cataloged over 1,000 AI solutions across 15+ categories, from content creation 
               and productivity to marketing and development tools.
             </p>
@@ -115,7 +115,7 @@ function AboutPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdnX3LsD5NU1_SMq79IRstx2XsZ-Dt76QlDi44R3OP98vDTwA/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfJL7xP6G_V0GPNTPdcpxOqbP899MJa7L49-qQp72-CxJ7GfQ/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center px-6 py-3 bg-white text-purple-600 rounded-full font-medium hover:bg-purple-50 transition-colors"
