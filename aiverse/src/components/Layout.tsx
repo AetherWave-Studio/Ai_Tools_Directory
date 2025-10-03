@@ -30,8 +30,8 @@ function Layout() {
               >
                 {sidebarOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
-              <Link 
-                to="/" 
+              <a 
+                href="https://aetherwavestudio.com" 
                 className="logo-link flex items-center ml-2 md:ml-0"
                 aria-label="AIverse - Premium AI Tools Directory"
               >
@@ -40,17 +40,17 @@ function Layout() {
                   alt="AetherWave Studio Ai Tools Directory" 
                   className="aiverse-logo"
                 />
-              </Link>
+              </a>
             </div>
 
             {/* Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              <Link
-                to="/"
+              <a
+                href="https://aetherwavestudio.com"
                 className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium transition-colors font-inter"
               >
                 Home
-              </Link>
+              </a>
               <Link
                 to="/about"
                 className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium transition-colors font-inter"
@@ -99,13 +99,13 @@ function Layout() {
       {userMenuOpen && (
         <div className="md:hidden fixed inset-0 z-50 bg-black bg-opacity-50" onClick={() => setUserMenuOpen(false)}>
           <div className="absolute top-16 right-4 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-1 border dark:border-gray-700">
-            <Link
-              to="/"
+            <a
+              href="https://aetherwavestudio.com"
               className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 font-inter transition-colors"
               onClick={() => setUserMenuOpen(false)}
             >
               Home
-            </Link>
+            </a>
             <Link
               to="/about"
               className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 font-inter transition-colors"
