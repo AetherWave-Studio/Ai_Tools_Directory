@@ -5,9 +5,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'inter': ['Inter', 'sans-serif'],
-        'poppins': ['Poppins', 'sans-serif'],
-        'sans': ['Inter', 'sans-serif'], // Make Inter the default sans font
+        'orbitron': ['Orbitron', 'sans-serif'],
+        'open-sans': ['Open Sans', 'sans-serif'],
+        'sans': ['Open Sans', 'sans-serif'], // Make Open Sans the default sans font
       },
       colors: {
         background: 'hsl(var(--background))',
