@@ -31,28 +31,26 @@ const affiliateConfigs: AffiliateConfig[] = [
   //     const encodedUrl = encodeURIComponent(url)
   //     return `https://affiliate-network.com/redirect?url=${encodedUrl}&id=YOUR_ID`
   //   }
-      {
-       pattern: /elevenlabs\.io/i,
-       convertToAffiliate: (url) => {
-         const encodedUrl = encodeURIComponent(url)
-         return `https://try.elevenlabs.io/5nlkb0r3t02z`
-       }
-      },
-      {
-         pattern: /pollo\.ai/i,
-         convertToAffiliate: (url) => {
-           const encodedUrl = encodeURIComponent(url)
-           return `https://pollo.ai?ref=ndk1mgu`
-      
-         }
-      },
-      {
-         pattern: /synthesia\.io/i,
-         convertToAffiliate: (url) => {
-           const encodedUrl = encodeURIComponent(url)
-           return `https://www.synthesia.io/?via=andrew-froehlich`
-         }
-      }
+  // },
+
+  {
+    pattern: /elevenlabs\.io/i,
+    convertToAffiliate: (url) => {
+      return `https://try.elevenlabs.io/5nlkb0r3t02z`
+    }
+  },
+  {
+    pattern: /pollo\.ai/i,
+    convertToAffiliate: (url) => {
+      return `https://pollo.ai?ref=ndk1mgu`
+    }
+  },
+  {
+    pattern: /synthesia\.io/i,
+    convertToAffiliate: (url) => {
+      return `https://www.synthesia.io/?via=andrew-froehlich`
+    }
+  }
 ]
 
 /**
