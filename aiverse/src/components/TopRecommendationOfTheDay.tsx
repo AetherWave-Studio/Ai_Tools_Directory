@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Award, Star, ExternalLink, Sparkles } from 'lucide-react'
 import { supabase, Tool } from '../lib/supabase'
+import { openToolLink } from '../utils/affiliateLinks'
 
 // High-rated tool recommendations (9.0+ rating) for daily rotation
 const dailyRecommendations = [
@@ -91,7 +92,7 @@ function TopRecommendationOfTheDay() {
 
   const handleVisitTool = () => {
     if (topRecommendation) {
-      window.open(topRecommendation.link, '_blank', 'noopener,noreferrer')
+      openToolLink(topRecommendation.link)
     }
   }
 

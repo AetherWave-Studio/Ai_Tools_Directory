@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { ExternalLink, Star, Heart, Award, Sparkles } from 'lucide-react'
 import { Tool } from '../lib/supabase'
+import { openToolLink } from '../utils/affiliateLinks'
 
 interface ToolCardProps {
   tool: Tool
@@ -12,7 +13,7 @@ function ToolCard({ tool, viewMode }: ToolCardProps) {
   const [isHovered, setIsHovered] = useState(false)
 
   const handleToolClick = () => {
-    window.open(tool.link, '_blank', 'noopener,noreferrer')
+    openToolLink(tool.link)
   }
 
   const handleImageError = () => {

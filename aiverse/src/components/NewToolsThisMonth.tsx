@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Star, ChevronRight, Calendar } from 'lucide-react'
+import { openToolLink } from '../utils/affiliateLinks'
 
 // New tools data from Toolify.ai for August 2025
 const newToolsData = [
@@ -53,7 +54,7 @@ function NewToolsThisMonth() {
           <div
             key={index}
             className="bg-white/10 backdrop-blur-sm rounded-lg p-4 hover:bg-white/20 transition-all duration-300 cursor-pointer"
-            onClick={() => window.open(tool.link, '_blank')}
+            onClick={() => openToolLink(tool.link)}
           >
             <div className="flex items-center space-x-3 mb-3">
               {tool.logo_url ? (

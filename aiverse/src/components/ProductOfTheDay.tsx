@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Award, Star, ExternalLink } from 'lucide-react'
 import { supabase, Tool } from '../lib/supabase'
+import { openToolLink } from '../utils/affiliateLinks'
 
 function ProductOfTheDay() {
   const [productOfTheDay, setProductOfTheDay] = useState<Tool | null>(null)
@@ -48,7 +49,7 @@ function ProductOfTheDay() {
 
   const handleVisitTool = () => {
     if (productOfTheDay) {
-      window.open(productOfTheDay.link, '_blank', 'noopener,noreferrer')
+      openToolLink(productOfTheDay.link)
     }
   }
 
