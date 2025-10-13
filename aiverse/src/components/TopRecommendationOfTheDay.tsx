@@ -105,7 +105,7 @@ function TopRecommendationOfTheDay() {
 
   if (loading) {
     return (
-      <div className="recommendation-section" style={{background: 'linear-gradient(to right, #6B46C1, #4299E1)', color: 'white', padding: '20px', borderRadius: '12px', marginBottom: '20px'}}>
+      <div className="recommendation-section top-recommendation-gradient">
         <div className="animate-pulse">
           <div className="flex items-center mb-4">
             <div className="w-6 h-6 bg-white/20 rounded mr-2"></div>
@@ -129,17 +129,10 @@ function TopRecommendationOfTheDay() {
   }
 
   return (
-    <div className="top-recommendation-gradient" style={{
-      background: 'linear-gradient(135deg, rgba(107, 70, 193, 0.9) 0%, #3B82F6 100%)', 
-      color: 'white', 
-      padding: '2rem', 
-      borderRadius: '1rem', 
-      marginBottom: '2rem',
-      boxShadow: '0 10px 25px rgba(107, 70, 193, 0.3)'
-    }}>
+    <div className="top-recommendation-gradient">
       <div className="flex items-center mb-6">
         <span className="star-icon" style={{color: '#FFD700', marginRight: '12px', fontSize: '28px'}}>⭐</span>
-        <h2 className="top-recommendation-title" style={{fontFamily: 'Poppins, sans-serif', margin: 0, fontSize: '2rem', fontWeight: 'bold'}}>
+        <h2 className="top-recommendation-title">
           Top Recommendation of the Day
         </h2>
       </div>
