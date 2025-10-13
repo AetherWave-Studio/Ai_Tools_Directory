@@ -905,6 +905,7 @@ html {
   }
   
   .top-recommendation-title {
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.75rem; /* 28px */
   }
   
@@ -961,10 +962,12 @@ html {
   
   /* Mobile top recommendation */
   .top-recommendation-gradient {
+    background: linear-gradient(135deg, #2C003E 0%, #1a0028 100%);
     padding: 1rem; /* 16px */
   }
   
   .top-recommendation-title {
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.5rem; /* 24px */
   }
   
@@ -1009,6 +1012,7 @@ html {
   }
   
   .top-recommendation-title {
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.25rem; /* 20px */
   }
   
