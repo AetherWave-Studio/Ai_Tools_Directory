@@ -10,8 +10,8 @@ const AetherWaveHero = () => {
       logo: '🤖',
       url: 'https://claude.ai',
       color: 'from-orange-500 to-amber-600',
-      backgroundMedia: '/assets/claude-bg.mp4',
-      mediaType: 'video'
+      backgroundMedia: '/assets/claude-bg.png',
+      mediaType: 'image'
     },
     {
       name: 'Midjourney',
@@ -19,7 +19,7 @@ const AetherWaveHero = () => {
       logo: '🎨',
       url: 'https://midjourney.com',
       color: 'from-purple-500 to-pink-600',
-      backgroundMedia: '',
+      backgroundMedia: '/assets/midjourney-bg.png',
       mediaType: 'image'
     },
     {
@@ -28,7 +28,7 @@ const AetherWaveHero = () => {
       logo: '🎙️',
       url: 'https://elevenlabs.io',
       color: 'from-blue-500 to-cyan-600',
-      backgroundMedia: '',
+      backgroundMedia: '/assets/elevenlabs-bg.png',
       mediaType: 'image'
     },
     {
@@ -37,7 +37,7 @@ const AetherWaveHero = () => {
       logo: '💬',
       url: 'https://chat.openai.com',
       color: 'from-green-500 to-emerald-600',
-      backgroundMedia: '',
+      backgroundMedia: '/assets/chatgpt-bg.png',
       mediaType: 'image'
     },
     {
@@ -46,7 +46,7 @@ const AetherWaveHero = () => {
       logo: '🎬',
       url: 'https://runwayml.com',
       color: 'from-red-500 to-rose-600',
-      backgroundMedia: '',
+      backgroundMedia: '/assets/runway-bg.png',
       mediaType: 'image'
     },
     {
@@ -55,7 +55,7 @@ const AetherWaveHero = () => {
       logo: '👤',
       url: 'https://synthesia.io',
       color: 'from-indigo-500 to-purple-600',
-      backgroundMedia: '',
+      backgroundMedia: '/assets/synthesia-bg.png',
       mediaType: 'image'
     },
     {
@@ -64,7 +64,7 @@ const AetherWaveHero = () => {
       logo: '✨',
       url: 'https://pollo.ai',
       color: 'from-yellow-500 to-orange-600',
-      backgroundMedia: '',
+      backgroundMedia: '/assets/pollo-bg.png',
       mediaType: 'image'
     },
     {
@@ -73,7 +73,7 @@ const AetherWaveHero = () => {
       logo: '💻',
       url: 'https://github.com/features/copilot',
       color: 'from-gray-600 to-slate-700',
-      backgroundMedia: '',
+      backgroundMedia: '/assets/copilot-bg.png',
       mediaType: 'image'
     }
   ]
