@@ -9,56 +9,72 @@ const AetherWaveHero = () => {
       description: 'Advanced AI for complex reasoning',
       logo: '🤖',
       url: 'https://claude.ai',
-      color: 'from-orange-500 to-amber-600'
+      color: 'from-orange-500 to-amber-600',
+      backgroundMedia: '', // Add image or video URL here
+      mediaType: 'image' // 'image' or 'video'
     },
     {
       name: 'Midjourney',
       description: 'AI image generation',
       logo: '🎨',
       url: 'https://midjourney.com',
-      color: 'from-purple-500 to-pink-600'
+      color: 'from-purple-500 to-pink-600',
+      backgroundMedia: '',
+      mediaType: 'image'
     },
     {
       name: 'ElevenLabs',
       description: 'AI voice synthesis',
       logo: '🎙️',
       url: 'https://elevenlabs.io',
-      color: 'from-blue-500 to-cyan-600'
+      color: 'from-blue-500 to-cyan-600',
+      backgroundMedia: '',
+      mediaType: 'image'
     },
     {
       name: 'ChatGPT',
       description: 'Conversational AI assistant',
       logo: '💬',
       url: 'https://chat.openai.com',
-      color: 'from-green-500 to-emerald-600'
+      color: 'from-green-500 to-emerald-600',
+      backgroundMedia: '',
+      mediaType: 'image'
     },
     {
       name: 'Runway',
       description: 'AI video generation',
       logo: '🎬',
       url: 'https://runwayml.com',
-      color: 'from-red-500 to-rose-600'
+      color: 'from-red-500 to-rose-600',
+      backgroundMedia: '',
+      mediaType: 'image'
     },
     {
       name: 'Synthesia',
       description: 'AI video avatars',
       logo: '👤',
       url: 'https://synthesia.io',
-      color: 'from-indigo-500 to-purple-600'
+      color: 'from-indigo-500 to-purple-600',
+      backgroundMedia: '',
+      mediaType: 'image'
     },
     {
       name: 'Pollo AI',
       description: 'AI content creation',
       logo: '✨',
       url: 'https://pollo.ai',
-      color: 'from-yellow-500 to-orange-600'
+      color: 'from-yellow-500 to-orange-600',
+      backgroundMedia: '',
+      mediaType: 'image'
     },
     {
       name: 'GitHub Copilot',
       description: 'AI code assistant',
       logo: '💻',
       url: 'https://github.com/features/copilot',
-      color: 'from-gray-600 to-slate-700'
+      color: 'from-gray-600 to-slate-700',
+      backgroundMedia: '',
+      mediaType: 'image'
     }
   ]
 
@@ -112,10 +128,35 @@ const AetherWaveHero = () => {
               {featuredTools.map((tool, index) => (
                 <div
                   key={tool.name}
-                  className="group relative cursor-pointer w-64 perspective-1000"
+                  className="group relative cursor-pointer w-64 perspective-1000 overflow-hidden rounded-2xl"
                   onClick={() => openToolLink(tool.url)}
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
+                  {/* Background Media Layer (Image or Video) */}
+                  {tool.backgroundMedia && (
+                    <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                      {tool.mediaType === 'video' ? (
+                        <video
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          className="w-full h-full object-cover opacity-30 group-hover:opacity-50 transition-opacity duration-500"
+                        >
+                          <source src={tool.backgroundMedia} type="video/mp4" />
+                        </video>
+                      ) : (
+                        <img
+                          src={tool.backgroundMedia}
+                          alt=""
+                          className="w-full h-full object-cover opacity-30 group-hover:opacity-50 transition-opacity duration-500"
+                        />
+                      )}
+                      {/* Gradient overlay to blend media with holographic effect */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-black/50"></div>
+                    </div>
+                  )}
+                  
                   {/* Holographic background with iridescent gradient */}
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/20 via-pink-500/20 to-cyan-500/20 opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
