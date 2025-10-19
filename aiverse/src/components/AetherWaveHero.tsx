@@ -73,7 +73,7 @@ const AetherWaveHero = () => {
       logo: '💡',
       url: 'https://chatllm.abacus.ai/RhLptmHbkJ',
       color: 'from-indigo-500 to-purple-600',
-      backgroundMedia: '',
+      backgroundMedia: 'assets/chatLLM.MP4',
       mediaType: 'video'
     },
     {
@@ -172,7 +172,7 @@ const AetherWaveHero = () => {
       logo: '🛍️',
       url: 'https://gumroad.com',
       color: 'from-pink-500 to-rose-600',
-      backgroundMedia: '',
+      backgroundMedia: '/assets/gumroad-bg.mp4',
       mediaType: 'video'
     },
     {
