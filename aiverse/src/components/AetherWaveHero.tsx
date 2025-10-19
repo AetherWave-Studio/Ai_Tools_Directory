@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
-import { Sparkles, Zap, Brain, Wand2, ChevronLeft, ChevronRight } from 'lucide-react'
+import React, { useState, useRef } from 'react'
+import { Sparkles, Zap, Brain, Wand2 } from 'lucide-react'
 import { openToolLink } from '../utils/affiliateLinks'
 
 const AetherWaveHero = () => {
   const [currentPage, setCurrentPage] = useState(0)
   const toolsPerPage = 8
+  const touchStartX = useRef(0)
+  const touchEndX = useRef(0)
   const featuredTools = [
     {
       name: 'Claude',
@@ -232,6 +234,27 @@ const AetherWaveHero = () => {
     }
   }
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX
+  }
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX
+  }
+
+  const handleTouchEnd = () => {
+    const swipeThreshold = 50
+    const diff = touchStartX.current - touchEndX.current
+
+    if (Math.abs(diff) > swipeThreshold) {
+      if (diff > 0) {
+        nextPage()
+      } else {
+        prevPage()
+      }
+    }
+  }
+
   return (
     <div className="relative overflow-hidden rounded-3xl mb-12 shadow-2xl">
       {/* Background with Midnight Violet gradient */}
@@ -272,40 +295,19 @@ const AetherWaveHero = () => {
         <div className="relative max-w-6xl mx-auto">
           {/* Page indicator */}
           <div className="absolute -top-6 right-0 text-xs text-gray-400 flex items-center gap-1">
-            <span>Page {currentPage + 1} of {totalPages}</span>
+            <span>Swipe to browse • Page {currentPage + 1} of {totalPages}</span>
             <Zap className="w-3 h-3" />
           </div>
           
-          {/* Tools Grid Container */}
-          <div className="relative">
-            {/* Left Arrow */}
-            <button
-              onClick={prevPage}
-              disabled={currentPage === 0}
-              className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-30 w-10 h-10 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-500/80 border border-white/30 flex items-center justify-center backdrop-blur-sm transition-all duration-300 ${
-                currentPage === 0 
-                  ? 'opacity-30 cursor-not-allowed' 
-                  : 'hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] active:scale-95'
-              }`}
-            >
-              <ChevronLeft className="w-6 h-6 text-white" />
-            </button>
-
-            {/* Right Arrow */}
-            <button
-              onClick={nextPage}
-              disabled={currentPage === totalPages - 1}
-              className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-30 w-10 h-10 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-500/80 border border-white/30 flex items-center justify-center backdrop-blur-sm transition-all duration-300 ${
-                currentPage === totalPages - 1 
-                  ? 'opacity-30 cursor-not-allowed' 
-                  : 'hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] active:scale-95'
-              }`}
-            >
-              <ChevronRight className="w-6 h-6 text-white" />
-            </button>
-
+          {/* Tools Grid Container with Swipe Support */}
+          <div 
+            className="relative touch-pan-y"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             {/* Tools Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 select-none">
               {currentTools.map((tool, index) => (
                 <div
                   key={tool.name}
