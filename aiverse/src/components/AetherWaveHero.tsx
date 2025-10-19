@@ -134,26 +134,30 @@ const AetherWaveHero = () => {
                 >
                   {/* Background Media Layer (Image or Video) */}
                   {tool.backgroundMedia && (
-                    <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                    <div className="absolute inset-0 rounded-2xl overflow-hidden z-0">
                       {tool.mediaType === 'video' ? (
                         <video
+                          key={tool.backgroundMedia}
                           autoPlay
                           loop
                           muted
                           playsInline
-                          className="w-full h-full object-cover opacity-30 group-hover:opacity-50 transition-opacity duration-500"
+                          preload="auto"
+                          className="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-500"
+                          style={{ backgroundColor: 'transparent' }}
                         >
                           <source src={tool.backgroundMedia} type="video/mp4" />
+                          Your browser does not support the video tag.
                         </video>
                       ) : (
                         <img
                           src={tool.backgroundMedia}
                           alt=""
-                          className="w-full h-full object-cover opacity-30 group-hover:opacity-50 transition-opacity duration-500"
+                          className="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-500"
                         />
                       )}
-                      {/* Gradient overlay to blend media with holographic effect */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-black/50"></div>
+                      {/* Subtle dark overlay for text readability */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-transparent to-black/30"></div>
                     </div>
                   )}
                   
@@ -172,11 +176,11 @@ const AetherWaveHero = () => {
                   <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-pink-300/40 to-purple-300/40 rounded-full blur-xl group-hover:blur-2xl group-hover:scale-150 transition-all duration-500"></div>
                   <div className="absolute bottom-4 left-4 w-20 h-20 bg-gradient-to-br from-cyan-300/40 to-blue-300/40 rounded-full blur-xl group-hover:blur-2xl group-hover:scale-150 transition-all duration-500"></div>
                   
-                  {/* Card base with semi-transparent background */}
-                  <div className="absolute inset-0 bg-black/30 backdrop-blur-md rounded-2xl border border-white/30 group-hover:border-white/50 shadow-2xl group-hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-500"></div>
+                  {/* Card base with border only - allows video to show through */}
+                  <div className="absolute inset-0 rounded-2xl border border-white/30 group-hover:border-white/50 shadow-2xl group-hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-500 z-10"></div>
                   
                   {/* Content */}
-                  <div className="relative p-5 group-hover:scale-105 transition-transform duration-500">
+                  <div className="relative p-5 group-hover:scale-105 transition-transform duration-500 z-20">
                     {/* Tool Logo/Icon with holographic glow */}
                     <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${tool.color} flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform duration-500 shadow-lg group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]`}>
                       {tool.logo}
