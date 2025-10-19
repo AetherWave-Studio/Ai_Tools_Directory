@@ -110,30 +110,36 @@ const AetherWaveHero = () => {
               {featuredTools.map((tool, index) => (
                 <div
                   key={tool.name}
-                  className="group relative bg-white/5 backdrop-blur-md rounded-2xl p-5 border border-white/10 hover:border-white/30 transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer w-64"
+                  className="group relative cursor-pointer w-64"
                   onClick={() => openToolLink(tool.url)}
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  {/* Tool Logo/Icon */}
-                  <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${tool.color} flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                    {tool.logo}
-                  </div>
-
-                  {/* Tool Info */}
-                  <h3 className="text-lg font-bold text-white mb-2">
-                    {tool.name}
-                  </h3>
-                  <p className="text-sm text-gray-300 mb-3">
-                    {tool.description}
-                  </p>
-
-                  {/* Hover Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-pink-500/0 to-blue-500/0 group-hover:from-purple-500/10 group-hover:via-pink-500/10 group-hover:to-blue-500/10 rounded-2xl transition-all duration-300"></div>
+                  {/* Glass pane effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-2xl border border-white/20 shadow-xl group-hover:shadow-2xl group-hover:border-white/40 transition-all duration-300"></div>
                   
-                  {/* Arrow indicator */}
-                  <div className="flex items-center text-cyan-400 text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span>Explore</span>
-                    <Zap className="w-3 h-3 ml-1" />
+                  {/* Shimmer effect on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/0 to-transparent group-hover:via-white/10 rounded-2xl transition-all duration-500 group-hover:animate-shimmer"></div>
+                  
+                  {/* Content */}
+                  <div className="relative p-5 group-hover:scale-105 transition-transform duration-300">
+                    {/* Tool Logo/Icon */}
+                    <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${tool.color} flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                      {tool.logo}
+                    </div>
+
+                    {/* Tool Info */}
+                    <h3 className="text-lg font-bold text-white mb-2">
+                      {tool.name}
+                    </h3>
+                    <p className="text-sm text-gray-200 mb-3">
+                      {tool.description}
+                    </p>
+                    
+                    {/* Arrow indicator */}
+                    <div className="flex items-center text-cyan-300 text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span>Explore</span>
+                      <Zap className="w-3 h-3 ml-1" />
+                    </div>
                   </div>
                 </div>
               ))}
