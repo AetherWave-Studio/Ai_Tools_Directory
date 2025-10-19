@@ -110,35 +110,47 @@ const AetherWaveHero = () => {
               {featuredTools.map((tool, index) => (
                 <div
                   key={tool.name}
-                  className="group relative cursor-pointer w-64"
+                  className="group relative cursor-pointer w-64 perspective-1000"
                   onClick={() => openToolLink(tool.url)}
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  {/* Glass pane effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-2xl border border-white/20 shadow-xl group-hover:shadow-2xl group-hover:border-white/40 transition-all duration-300"></div>
+                  {/* Holographic background with iridescent gradient */}
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/20 via-pink-500/20 to-cyan-500/20 opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
-                  {/* Shimmer effect on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/0 to-transparent group-hover:via-white/10 rounded-2xl transition-all duration-500 group-hover:animate-shimmer"></div>
+                  {/* Animated iridescent overlay - creates color shift effect */}
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-400/0 via-pink-400/30 to-cyan-400/0 group-hover:from-cyan-400/0 group-hover:via-purple-400/30 group-hover:to-pink-400/0 transition-all duration-700 ease-in-out"></div>
+                  
+                  {/* Prism light reflection effect */}
+                  <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                    <div className="absolute top-0 -left-full h-full w-1/2 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 group-hover:left-full transition-all duration-1000 ease-out"></div>
+                  </div>
+                  
+                  {/* Holographic shimmer spots */}
+                  <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-pink-300/40 to-purple-300/40 rounded-full blur-xl group-hover:blur-2xl group-hover:scale-150 transition-all duration-500"></div>
+                  <div className="absolute bottom-4 left-4 w-20 h-20 bg-gradient-to-br from-cyan-300/40 to-blue-300/40 rounded-full blur-xl group-hover:blur-2xl group-hover:scale-150 transition-all duration-500"></div>
+                  
+                  {/* Card base with semi-transparent background */}
+                  <div className="absolute inset-0 bg-black/30 backdrop-blur-md rounded-2xl border border-white/30 group-hover:border-white/50 shadow-2xl group-hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-500"></div>
                   
                   {/* Content */}
-                  <div className="relative p-5 group-hover:scale-105 transition-transform duration-300">
-                    {/* Tool Logo/Icon */}
-                    <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${tool.color} flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                  <div className="relative p-5 group-hover:scale-105 transition-transform duration-500">
+                    {/* Tool Logo/Icon with holographic glow */}
+                    <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${tool.color} flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform duration-500 shadow-lg group-hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]`}>
                       {tool.logo}
                     </div>
 
                     {/* Tool Info */}
-                    <h3 className="text-lg font-bold text-white mb-2">
+                    <h3 className="text-lg font-bold text-white mb-2 drop-shadow-lg">
                       {tool.name}
                     </h3>
-                    <p className="text-sm text-gray-200 mb-3">
+                    <p className="text-sm text-gray-100 mb-3 drop-shadow-md">
                       {tool.description}
                     </p>
                     
-                    {/* Arrow indicator */}
-                    <div className="flex items-center text-cyan-300 text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {/* Arrow indicator with rainbow gradient */}
+                    <div className="flex items-center text-transparent bg-gradient-to-r from-cyan-300 via-purple-300 to-pink-300 bg-clip-text text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       <span>Explore</span>
-                      <Zap className="w-3 h-3 ml-1" />
+                      <Zap className="w-3 h-3 ml-1 text-cyan-300" />
                     </div>
                   </div>
                 </div>
