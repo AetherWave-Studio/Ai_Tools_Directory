@@ -84,10 +84,10 @@ const AetherWaveHero = () => {
           </div>
           
           <h1 className="heading-hero text-white mb-3">
-            AI Tools We Trust at{' '}
             <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
               AetherWave Studio
             </span>
+            {' '}Tools We Use
           </h1>
           
           <p className="body-enhanced text-gray-300 max-w-3xl mx-auto leading-relaxed">
