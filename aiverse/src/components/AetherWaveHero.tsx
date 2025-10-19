@@ -14,21 +14,84 @@ const AetherWaveHero = () => {
       mediaType: 'image'
     },
     {
-      name: 'Midjourney',
-      description: 'AI image generation',
-      logo: '🎨',
-      url: 'https://midjourney.com',
-      color: 'from-purple-500 to-pink-600',
-      backgroundMedia: '/assets/midjourney-bg.png',
+      name: 'SUNO',
+      description: 'AI music & song generation',
+      logo: '🎵',
+      url: 'https://suno.com/invite/@drewfroehlich',
+      color: 'from-red-500 to-orange-600',
+      backgroundMedia: '/assets/suno-bg.png',
       mediaType: 'image'
     },
     {
       name: 'ElevenLabs',
-      description: 'AI voice synthesis',
+      description: 'AI voice synthesis & cloning',
       logo: '🎙️',
-      url: 'https://elevenlabs.io',
+      url: 'https://try.elevenlabs.io/5nlkb0r3t02z',
       color: 'from-blue-500 to-cyan-600',
       backgroundMedia: '/assets/elevenlabs-bg.png',
+      mediaType: 'image'
+    },
+    {
+      name: 'SuperGrok',
+      description: 'AI with visual reasoning',
+      logo: '⚡',
+      url: 'https://grok.x.ai',
+      color: 'from-purple-600 to-blue-600',
+      backgroundMedia: '/assets/supergrok-bg.png',
+      mediaType: 'image'
+    },
+    {
+      name: 'Canva',
+      description: 'Graphic design & templates',
+      logo: '🎨',
+      url: 'https://canva.com',
+      color: 'from-teal-500 to-purple-600',
+      backgroundMedia: '/assets/canva-bg.png',
+      mediaType: 'image'
+    },
+    {
+      name: 'Adobe Photoshop',
+      description: 'Professional photo editing',
+      logo: '🖼️',
+      url: 'https://adobe.com/products/photoshop',
+      color: 'from-blue-600 to-cyan-700',
+      backgroundMedia: '/assets/photoshop-bg.png',
+      mediaType: 'image'
+    },
+    {
+      name: 'Perplexity',
+      description: 'AI-powered search engine',
+      logo: '🔍',
+      url: 'https://pplx.ai/drewfroehl30925',
+      color: 'from-cyan-500 to-blue-600',
+      backgroundMedia: '/assets/perplexity-bg.png',
+      mediaType: 'image'
+    },
+    {
+      name: 'ChatLLM',
+      description: 'All LLMs in one platform',
+      logo: '💡',
+      url: 'https://chatllm.abacus.ai/RhLptmHbkJ',
+      color: 'from-indigo-500 to-purple-600',
+      backgroundMedia: '',
+      mediaType: 'image'
+    },
+    {
+      name: 'Openart',
+      description: 'AI art generator',
+      logo: '🎨',
+      url: 'https://openart.ai',
+      color: 'from-pink-500 to-rose-600',
+      backgroundMedia: '/assets/openart-bg.png',
+      mediaType: 'image'
+    },
+    {
+      name: 'Seedance',
+      description: 'AI motion & animation',
+      logo: '💃',
+      url: 'https://seedance.ai',
+      color: 'from-pink-500 to-purple-600',
+      backgroundMedia: '/assets/seedance-bg.png',
       mediaType: 'image'
     },
     {
@@ -41,26 +104,62 @@ const AetherWaveHero = () => {
       mediaType: 'image'
     },
     {
-      name: 'Runway',
-      description: 'AI video generation',
-      logo: '🎬',
-      url: 'https://runwayml.com',
-      color: 'from-red-500 to-rose-600',
-      backgroundMedia: '/assets/runway-bg.png',
+      name: 'Adobe Firefly',
+      description: 'Generative AI for creators',
+      logo: '🔥',
+      url: 'https://firefly.adobe.com',
+      color: 'from-orange-500 to-amber-600',
+      backgroundMedia: '/assets/firefly-bg.png',
       mediaType: 'image'
     },
     {
-      name: 'Synthesia',
-      description: 'AI video avatars',
-      logo: '👤',
-      url: 'https://synthesia.io',
-      color: 'from-indigo-500 to-purple-600',
-      backgroundMedia: '/assets/synthesia-bg.png',
+      name: 'Leonardo',
+      description: 'AI art generation platform',
+      logo: '🖌️',
+      url: 'https://leonardo.ai',
+      color: 'from-amber-500 to-yellow-600',
+      backgroundMedia: '/assets/leonardo-bg.png',
+      mediaType: 'image'
+    },
+    {
+      name: 'OpenAI',
+      description: 'ChatGPT & DALL-E platform',
+      logo: '🌟',
+      url: 'https://openai.com',
+      color: 'from-emerald-500 to-teal-600',
+      backgroundMedia: '/assets/openai-bg.png',
+      mediaType: 'image'
+    },
+    {
+      name: 'LemonSlice',
+      description: 'AI design assistant',
+      logo: '🍋',
+      url: 'https://lemonslice.ai',
+      color: 'from-yellow-400 to-lime-500',
+      backgroundMedia: '/assets/lemonslice-bg.png',
+      mediaType: 'image'
+    },
+    {
+      name: 'CapCut',
+      description: 'AI video editing',
+      logo: '✂️',
+      url: 'https://capcut.com',
+      color: 'from-pink-600 to-purple-700',
+      backgroundMedia: '/assets/capcut-bg.png',
+      mediaType: 'image'
+    },
+    {
+      name: 'Fal.ai',
+      description: 'Fast AI model inference',
+      logo: '⚡',
+      url: 'https://fal.ai',
+      color: 'from-blue-500 to-white',
+      backgroundMedia: '/assets/falai-bg.png',
       mediaType: 'image'
     },
     {
       name: 'Pollo AI',
-      description: 'AI content creation',
+      description: 'AI video & animation',
       logo: '✨',
       url: 'https://pollo.ai',
       color: 'from-yellow-500 to-orange-600',
@@ -68,12 +167,48 @@ const AetherWaveHero = () => {
       mediaType: 'image'
     },
     {
-      name: 'GitHub Copilot',
-      description: 'AI code assistant',
-      logo: '💻',
-      url: 'https://github.com/features/copilot',
-      color: 'from-gray-600 to-slate-700',
-      backgroundMedia: '/assets/copilot-bg.png',
+      name: 'Gumroad',
+      description: 'Creator commerce platform',
+      logo: '🛍️',
+      url: 'https://gumroad.com',
+      color: 'from-pink-500 to-rose-600',
+      backgroundMedia: '',
+      mediaType: 'image'
+    },
+    {
+      name: 'Google AI Studio',
+      description: 'Gemini API playground',
+      logo: '🧪',
+      url: 'https://ai.google.dev',
+      color: 'from-blue-500 to-green-500',
+      backgroundMedia: '',
+      mediaType: 'image'
+    },
+    {
+      name: 'Luma Pro',
+      description: 'AI video generation',
+      logo: '🎬',
+      url: 'https://lumalabs.ai',
+      color: 'from-purple-500 to-pink-600',
+      backgroundMedia: '',
+      mediaType: 'image'
+    },
+    {
+      name: 'Hailuo AI',
+      description: 'Cinematic AI video',
+      logo: '🎥',
+      url: 'https://hailuoai.video',
+      color: 'from-red-500 to-orange-600',
+      backgroundMedia: '',
+      mediaType: 'image'
+    },
+    {
+      name: 'Kling AI',
+      description: 'Text-to-video generation',
+      logo: '📹',
+      url: 'https://klingai.com',
+      color: 'from-cyan-500 to-blue-600',
+      backgroundMedia: '',
       mediaType: 'image'
     }
   ]
