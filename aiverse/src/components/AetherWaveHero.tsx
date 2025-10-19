@@ -77,7 +77,7 @@ const AetherWaveHero = () => {
       logo: '💡',
       url: 'https://chatllm.abacus.ai/RhLptmHbkJ',
       color: 'from-indigo-500 to-purple-600',
-      backgroundMedia: 'assets/chatLLM.MP4',
+      backgroundMedia: '/assets/chatllm-bg.mp4',
       mediaType: 'video'
     },
     {
@@ -185,7 +185,7 @@ const AetherWaveHero = () => {
       logo: '🧪',
       url: 'https://ai.google.dev',
       color: 'from-blue-500 to-green-500',
-      backgroundMedia: '',
+      backgroundMedia: '/assets/googleai-bg.mp4',
       mediaType: 'video'
     },
     {
@@ -194,7 +194,7 @@ const AetherWaveHero = () => {
       logo: '🎬',
       url: 'https://lumalabs.ai',
       color: 'from-purple-500 to-pink-600',
-      backgroundMedia: '',
+      backgroundMedia: '/assets/lumapro-bg.mp4',
       mediaType: 'video'
     },
     {
@@ -203,7 +203,7 @@ const AetherWaveHero = () => {
       logo: '🎥',
       url: 'https://hailuoai.video',
       color: 'from-red-500 to-orange-600',
-      backgroundMedia: '',
+      backgroundMedia: '/assets/hailuoai-bg.mp4',
       mediaType: 'video'
     },
     {
@@ -212,7 +212,7 @@ const AetherWaveHero = () => {
       logo: '📹',
       url: 'https://klingai.com',
       color: 'from-cyan-500 to-blue-600',
-      backgroundMedia: '',
+      backgroundMedia: '/assets/klingai-bg.mp4',
       mediaType: 'video'
     }
   ]
