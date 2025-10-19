@@ -83,11 +83,13 @@ const AetherWaveHero = () => {
             <span className="text-sm font-medium text-white">Powered by AI Excellence</span>
           </div>
           
-          <h1 className="heading-hero text-white mb-3">
-            <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h1 className="mb-3 flex flex-wrap items-center justify-center gap-3">
+            <span className="heading-hero bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
               AetherWave Studio
             </span>
-            {' '}Tools We Use
+            <span className="font-['Orbitron'] text-white font-bold text-3xl md:text-4xl lg:text-5xl">
+              Tools We Use
+            </span>
           </h1>
           
           <p className="body-enhanced text-gray-300 max-w-3xl mx-auto leading-relaxed">
