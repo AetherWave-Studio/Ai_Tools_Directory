@@ -1,8 +1,10 @@
-import React from 'react'
-import { Sparkles, Zap, Brain, Wand2 } from 'lucide-react'
+import React, { useState } from 'react'
+import { Sparkles, Zap, Brain, Wand2, ChevronLeft, ChevronRight } from 'lucide-react'
 import { openToolLink } from '../utils/affiliateLinks'
 
 const AetherWaveHero = () => {
+  const [currentPage, setCurrentPage] = useState(0)
+  const toolsPerPage = 8
   const featuredTools = [
     {
       name: 'Claude',
@@ -213,6 +215,23 @@ const AetherWaveHero = () => {
     }
   ]
 
+  const totalPages = Math.ceil(featuredTools.length / toolsPerPage)
+  const startIndex = currentPage * toolsPerPage
+  const endIndex = startIndex + toolsPerPage
+  const currentTools = featuredTools.slice(startIndex, endIndex)
+
+  const nextPage = () => {
+    if (currentPage < totalPages - 1) {
+      setCurrentPage(currentPage + 1)
+    }
+  }
+
+  const prevPage = () => {
+    if (currentPage > 0) {
+      setCurrentPage(currentPage - 1)
+    }
+  }
+
   return (
     <div className="relative overflow-hidden rounded-3xl mb-12 shadow-2xl">
       {/* Background with Midnight Violet gradient */}
@@ -249,23 +268,50 @@ const AetherWaveHero = () => {
           </p>
         </div>
 
-        {/* Featured Tools - Scrollable Grid */}
+        {/* Featured Tools - Paginated Grid */}
         <div className="relative max-w-6xl mx-auto">
-          {/* Scroll hint indicator */}
+          {/* Page indicator */}
           <div className="absolute -top-6 right-0 text-xs text-gray-400 flex items-center gap-1">
-            <span>Scroll to see more</span>
+            <span>Page {currentPage + 1} of {totalPages}</span>
             <Zap className="w-3 h-3" />
           </div>
           
-          {/* Scrollable container */}
-          <div className="overflow-x-auto overflow-y-visible pb-4 scrollbar-thin scrollbar-thumb-purple-500/50 scrollbar-track-transparent hover:scrollbar-thumb-purple-500/80">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 min-w-max pr-4">
-              {featuredTools.map((tool, index) => (
+          {/* Tools Grid Container */}
+          <div className="relative">
+            {/* Left Arrow */}
+            <button
+              onClick={prevPage}
+              disabled={currentPage === 0}
+              className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-30 w-10 h-10 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-500/80 border border-white/30 flex items-center justify-center backdrop-blur-sm transition-all duration-300 ${
+                currentPage === 0 
+                  ? 'opacity-30 cursor-not-allowed' 
+                  : 'hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] active:scale-95'
+              }`}
+            >
+              <ChevronLeft className="w-6 h-6 text-white" />
+            </button>
+
+            {/* Right Arrow */}
+            <button
+              onClick={nextPage}
+              disabled={currentPage === totalPages - 1}
+              className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-30 w-10 h-10 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-500/80 border border-white/30 flex items-center justify-center backdrop-blur-sm transition-all duration-300 ${
+                currentPage === totalPages - 1 
+                  ? 'opacity-30 cursor-not-allowed' 
+                  : 'hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] active:scale-95'
+              }`}
+            >
+              <ChevronRight className="w-6 h-6 text-white" />
+            </button>
+
+            {/* Tools Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {currentTools.map((tool, index) => (
                 <div
                   key={tool.name}
-                  className="group relative cursor-pointer w-64 perspective-1000 overflow-hidden rounded-2xl"
+                  className="group relative cursor-pointer perspective-1000 overflow-hidden rounded-2xl transition-all duration-500 hover:z-20 aspect-[3/4]"
                   onClick={() => openToolLink(tool.url)}
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  style={{ animationDelay: `${index * 50}ms` }}
                 >
                   {/* Background Media Layer (Image or Video) */}
                   {tool.backgroundMedia && (
@@ -338,6 +384,22 @@ const AetherWaveHero = () => {
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* Page Dots Indicator */}
+          <div className="flex justify-center gap-2 mt-6">
+            {Array.from({ length: totalPages }).map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentPage(index)}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  index === currentPage 
+                    ? 'bg-gradient-to-r from-purple-400 to-pink-400 w-8' 
+                    : 'bg-white/30 hover:bg-white/50'
+                }`}
+                aria-label={`Go to page ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
 
