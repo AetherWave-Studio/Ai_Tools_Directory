@@ -10,8 +10,8 @@ const AetherWaveHero = () => {
       logo: '🤖',
       url: 'https://claude.ai',
       color: 'from-orange-500 to-amber-600',
-      backgroundMedia: '/assets/claude-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/claude-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'SUNO',
@@ -19,8 +19,8 @@ const AetherWaveHero = () => {
       logo: '🎵',
       url: 'https://suno.com/invite/@drewfroehlich',
       color: 'from-red-500 to-orange-600',
-      backgroundMedia: '/assets/suno-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/suno-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'ElevenLabs',
@@ -28,8 +28,8 @@ const AetherWaveHero = () => {
       logo: '🎙️',
       url: 'https://try.elevenlabs.io/5nlkb0r3t02z',
       color: 'from-blue-500 to-cyan-600',
-      backgroundMedia: '/assets/elevenlabs-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/elevenlabs-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'SuperGrok',
@@ -37,8 +37,8 @@ const AetherWaveHero = () => {
       logo: '⚡',
       url: 'https://grok.x.ai',
       color: 'from-purple-600 to-blue-600',
-      backgroundMedia: '/assets/supergrok-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/supergrok-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'Canva',
@@ -46,8 +46,8 @@ const AetherWaveHero = () => {
       logo: '🎨',
       url: 'https://canva.com',
       color: 'from-teal-500 to-purple-600',
-      backgroundMedia: '/assets/canva-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/canva-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'Adobe Photoshop',
@@ -55,8 +55,8 @@ const AetherWaveHero = () => {
       logo: '🖼️',
       url: 'https://adobe.com/products/photoshop',
       color: 'from-blue-600 to-cyan-700',
-      backgroundMedia: '/assets/photoshop-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/photoshop-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'Perplexity',
@@ -64,8 +64,8 @@ const AetherWaveHero = () => {
       logo: '🔍',
       url: 'https://pplx.ai/drewfroehl30925',
       color: 'from-cyan-500 to-blue-600',
-      backgroundMedia: '/assets/perplexity-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/perplexity-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'ChatLLM',
@@ -74,7 +74,7 @@ const AetherWaveHero = () => {
       url: 'https://chatllm.abacus.ai/RhLptmHbkJ',
       color: 'from-indigo-500 to-purple-600',
       backgroundMedia: '',
-      mediaType: 'image'
+      mediaType: 'video'
     },
     {
       name: 'Openart',
@@ -82,8 +82,8 @@ const AetherWaveHero = () => {
       logo: '🎨',
       url: 'https://openart.ai',
       color: 'from-pink-500 to-rose-600',
-      backgroundMedia: '/assets/openart-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/openart-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'Seedance',
@@ -91,8 +91,8 @@ const AetherWaveHero = () => {
       logo: '💃',
       url: 'https://seedance.ai',
       color: 'from-pink-500 to-purple-600',
-      backgroundMedia: '/assets/seedance-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/seedance-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'ChatGPT',
@@ -100,8 +100,8 @@ const AetherWaveHero = () => {
       logo: '💬',
       url: 'https://chat.openai.com',
       color: 'from-green-500 to-emerald-600',
-      backgroundMedia: '/assets/chatgpt-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/chatgpt-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'Adobe Firefly',
@@ -109,8 +109,8 @@ const AetherWaveHero = () => {
       logo: '🔥',
       url: 'https://firefly.adobe.com',
       color: 'from-orange-500 to-amber-600',
-      backgroundMedia: '/assets/firefly-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/firefly-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'Leonardo',
@@ -118,8 +118,8 @@ const AetherWaveHero = () => {
       logo: '🖌️',
       url: 'https://leonardo.ai',
       color: 'from-amber-500 to-yellow-600',
-      backgroundMedia: '/assets/leonardo-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/leonardo-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'OpenAI',
@@ -127,8 +127,8 @@ const AetherWaveHero = () => {
       logo: '🌟',
       url: 'https://openai.com',
       color: 'from-emerald-500 to-teal-600',
-      backgroundMedia: '/assets/openai-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/openai-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'LemonSlice',
@@ -136,8 +136,8 @@ const AetherWaveHero = () => {
       logo: '🍋',
       url: 'https://lemonslice.ai',
       color: 'from-yellow-400 to-lime-500',
-      backgroundMedia: '/assets/lemonslice-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/lemonslice-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'CapCut',
@@ -145,8 +145,8 @@ const AetherWaveHero = () => {
       logo: '✂️',
       url: 'https://capcut.com',
       color: 'from-pink-600 to-purple-700',
-      backgroundMedia: '/assets/capcut-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/capcut-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'Fal.ai',
@@ -154,8 +154,8 @@ const AetherWaveHero = () => {
       logo: '⚡',
       url: 'https://fal.ai',
       color: 'from-blue-500 to-white',
-      backgroundMedia: '/assets/falai-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/falai-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'Pollo AI',
@@ -163,8 +163,8 @@ const AetherWaveHero = () => {
       logo: '✨',
       url: 'https://pollo.ai',
       color: 'from-yellow-500 to-orange-600',
-      backgroundMedia: '/assets/pollo-bg.png',
-      mediaType: 'image'
+      backgroundMedia: '/assets/pollo-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'Gumroad',
@@ -173,7 +173,7 @@ const AetherWaveHero = () => {
       url: 'https://gumroad.com',
       color: 'from-pink-500 to-rose-600',
       backgroundMedia: '',
-      mediaType: 'image'
+      mediaType: 'video'
     },
     {
       name: 'Google AI Studio',
@@ -182,7 +182,7 @@ const AetherWaveHero = () => {
       url: 'https://ai.google.dev',
       color: 'from-blue-500 to-green-500',
       backgroundMedia: '',
-      mediaType: 'image'
+      mediaType: 'video'
     },
     {
       name: 'Luma Pro',
@@ -191,7 +191,7 @@ const AetherWaveHero = () => {
       url: 'https://lumalabs.ai',
       color: 'from-purple-500 to-pink-600',
       backgroundMedia: '',
-      mediaType: 'image'
+      mediaType: 'video'
     },
     {
       name: 'Hailuo AI',
@@ -200,7 +200,7 @@ const AetherWaveHero = () => {
       url: 'https://hailuoai.video',
       color: 'from-red-500 to-orange-600',
       backgroundMedia: '',
-      mediaType: 'image'
+      mediaType: 'video'
     },
     {
       name: 'Kling AI',
@@ -209,7 +209,7 @@ const AetherWaveHero = () => {
       url: 'https://klingai.com',
       color: 'from-cyan-500 to-blue-600',
       backgroundMedia: '',
-      mediaType: 'image'
+      mediaType: 'video'
     }
   ]
 
