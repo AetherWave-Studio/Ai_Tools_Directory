@@ -10,8 +10,8 @@ const AetherWaveHero = () => {
       logo: '🤖',
       url: 'https://claude.ai',
       color: 'from-orange-500 to-amber-600',
-      backgroundMedia: '', // Add image or video URL here
-      mediaType: 'image' // 'image' or 'video'
+      backgroundMedia: '/assets/claude-bg.mp4',
+      mediaType: 'video'
     },
     {
       name: 'Midjourney',
