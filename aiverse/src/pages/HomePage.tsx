@@ -11,6 +11,7 @@ import AdvancedFilters from '../components/AdvancedFilters'
 import RealTimeUpdates from '../components/RealTimeUpdates'
 import InfiniteScroll from '../components/InfiniteScroll'
 import RecommendationEngine from '../components/RecommendationEngine'
+import AetherWaveHero from '../components/AetherWaveHero'
 
 type SortOption = 'popularity' | 'alphabetical' | 'newest'
 type ViewMode = 'grid' | 'list'
@@ -214,6 +215,11 @@ function HomePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Real-time Updates Banner */}
         <RealTimeUpdates />
+
+        {/* AetherWave Studio Hero - only show on homepage without filters */}
+        {!category && !searchQuery && !showAdvancedFilters && (
+          <AetherWaveHero />
+        )}
 
         {/* Enhanced Search Bar with Voice Search */}
         <div className="mb-8">
