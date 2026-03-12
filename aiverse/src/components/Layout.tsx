@@ -3,6 +3,7 @@ import { Outlet, Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import Sidebar from './Sidebar'
 import DarkModeToggle from './DarkModeToggle'
+import Footer from './Footer'
 import { useState } from 'react'
 
 function Layout() {
@@ -90,9 +91,12 @@ function Layout() {
         <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
         {/* Main Content */}
-        <main id="main-content" className="flex-1 md:ml-64">
-          <Outlet />
-        </main>
+        <div className="flex-1 md:ml-64 flex flex-col min-h-[calc(100vh-4rem)]">
+          <main id="main-content" className="flex-1">
+            <Outlet />
+          </main>
+          <Footer />
+        </div>
       </div>
 
       {/* Mobile navigation menu overlay */}

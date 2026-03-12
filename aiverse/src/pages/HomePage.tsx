@@ -12,6 +12,7 @@ import RealTimeUpdates from '../components/RealTimeUpdates'
 import InfiniteScroll from '../components/InfiniteScroll'
 import RecommendationEngine from '../components/RecommendationEngine'
 import AetherWaveHero from '../components/AetherWaveHero'
+import AetherWaveBanner from '../components/AetherWaveBanner'
 
 type SortOption = 'popularity' | 'alphabetical' | 'newest'
 type ViewMode = 'grid' | 'list'
@@ -419,9 +420,9 @@ function HomePage() {
         )}
       </div>
 
-      {/* Enhanced MiniMax Credit */}
-      <div className="minimax-credit">
-        Built with ❤️ by MiniMax Agent
+      {/* AetherWave Platform CTA */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <AetherWaveBanner />
       </div>
     </div>
   )
