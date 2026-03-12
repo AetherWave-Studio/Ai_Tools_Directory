@@ -37,7 +37,7 @@ function Layout() {
                 aria-label="AIverse - Premium AI Tools Directory"
               >
                 <img 
-                  src="/aws-logo.png" 
+                  src="https://pub-072d159fccde4f248d11860d471880b6.r2.dev/template-assets/Logos/Logo-landscape-3c-t.png" 
                   alt="AetherWave Studio Ai Tools Directory" 
                   className="aiverse-logo"
                 />

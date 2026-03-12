@@ -9,7 +9,7 @@ function Footer() {
           {/* Brand */}
           <div>
             <a href="https://aetherwavestudio.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 mb-3">
-              <img src="/aws-logo.png" alt="AetherWave" className="h-8 w-8 object-contain" />
+              <img src="https://pub-072d159fccde4f248d11860d471880b6.r2.dev/template-assets/Logos/Logo-landscape-3c-t.png" alt="AetherWave" className="h-8 w-8 object-contain" />
               <span className="font-bold text-gray-900 dark:text-white">AetherWave</span>
             </a>
             <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">

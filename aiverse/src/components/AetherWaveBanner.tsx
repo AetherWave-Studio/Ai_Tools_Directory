@@ -59,7 +59,7 @@ function AetherWaveBanner() {
         {/* Logo area */}
         <div className="hidden md:flex flex-shrink-0 items-center justify-center w-32 h-32 rounded-2xl bg-gradient-to-br from-purple-800/50 to-pink-800/50 border border-purple-600/20">
           <img
-            src="/aws-logo.png"
+            src="https://pub-072d159fccde4f248d11860d471880b6.r2.dev/template-assets/Logos/Logo-landscape-3c-t.png"
             alt="AetherWave Studio"
             className="w-24 h-24 object-contain"
           />
