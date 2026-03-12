@@ -84,11 +84,6 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://chatllm.abacus.ai/RhLptmHbkJ" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
-                  <Sparkles className="h-4 w-4" /> ChatLLM by Abacus.ai <ExternalLink className="h-3 w-3 opacity-50" />
-                </a>
-              </li>
-              <li>
                 <a href="mailto:support@aetherwavestudio.com" className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
                   <Mail className="h-4 w-4" /> Contact Support
                 </a>
@@ -110,8 +105,30 @@ function Footer() {
           </div>
         </div>
 
+        {/* Partner badges */}
+        <div className="mt-10 pt-6 border-t border-gray-200 dark:border-gray-700 flex flex-wrap justify-center gap-3 mb-6">
+          <a
+            href="https://chatllm.abacus.ai/RhLptmHbkJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 px-4 py-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+          >
+            <img src="https://pub-072d159fccde4f248d11860d471880b6.r2.dev/Blog-content/abacus-deep-agent.png" alt="Deep Agent" className="h-5 w-5 rounded object-cover" />
+            <span className="text-xs font-medium text-gray-600 dark:text-gray-300">Powered by Deep Agent</span>
+          </a>
+          <a
+            href="https://try.elevenlabs.io/5nlkb0r3t02z"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 px-4 py-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+          >
+            <img src="https://pub-072d159fccde4f248d11860d471880b6.r2.dev/Blog-content/elevenlabs-symbol.png" alt="ElevenLabs" className="h-5 w-5 rounded object-cover" />
+            <span className="text-xs font-medium text-gray-600 dark:text-gray-300">Powered by ElevenLabs</span>
+          </a>
+        </div>
+
         {/* Bottom bar */}
-        <div className="mt-10 pt-6 border-t border-gray-200 dark:border-gray-700 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-6 border-t border-gray-200 dark:border-gray-700 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-gray-400 dark:text-gray-500">
             &copy; {new Date().getFullYear()} AetherWave Studio. All rights reserved.
           </p>
