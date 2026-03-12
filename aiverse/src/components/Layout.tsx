@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet, Link, useLocation } from 'react-router-dom'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, BookOpen, ShoppingBag, Newspaper } from 'lucide-react'
 import Sidebar from './Sidebar'
 import DarkModeToggle from './DarkModeToggle'
 import Footer from './Footer'
@@ -59,6 +59,30 @@ function Layout() {
                 About Us
               </Link>
               <a
+                href="https://amzn.to/4cJpZYz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium transition-colors font-inter flex items-center gap-1.5"
+              >
+                <BookOpen className="h-4 w-4" /> E-Book
+              </a>
+              <a
+                href="https://aetherwavestudio.com/static/shop.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium transition-colors font-inter flex items-center gap-1.5"
+              >
+                <ShoppingBag className="h-4 w-4" /> Shop
+              </a>
+              <a
+                href="https://blog.aetherwavestudio.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 px-3 py-2 text-sm font-medium transition-colors font-inter flex items-center gap-1.5"
+              >
+                <Newspaper className="h-4 w-4" /> Blog
+              </a>
+              <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdnX3LsD5NU1_SMq79IRstx2XsZ-Dt76QlDi44R3OP98vDTwA/viewform?usp=header"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -66,7 +90,7 @@ function Layout() {
               >
                 Submit Tool
               </a>
-              
+
               {/* Dark Mode Toggle */}
               <DarkModeToggle />
             </div>
@@ -117,6 +141,33 @@ function Layout() {
             >
               About Us
             </Link>
+            <a
+              href="https://amzn.to/4cJpZYz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 font-inter transition-colors"
+              onClick={() => setUserMenuOpen(false)}
+            >
+              E-Book
+            </a>
+            <a
+              href="https://aetherwavestudio.com/static/shop.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 font-inter transition-colors"
+              onClick={() => setUserMenuOpen(false)}
+            >
+              Shop
+            </a>
+            <a
+              href="https://blog.aetherwavestudio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 font-inter transition-colors"
+              onClick={() => setUserMenuOpen(false)}
+            >
+              Blog
+            </a>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdnX3LsD5NU1_SMq79IRstx2XsZ-Dt76QlDi44R3OP98vDTwA/viewform?usp=header"
               target="_blank"
