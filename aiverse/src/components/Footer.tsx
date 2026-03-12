@@ -1,5 +1,5 @@
 import React from 'react'
-import { Music, Video, Image, ShoppingBag, BookOpen, Mail, Newspaper, ExternalLink } from 'lucide-react'
+import { Music, Video, Image, ShoppingBag, BookOpen, Mail, Newspaper, ExternalLink, Sparkles } from 'lucide-react'
 
 function Footer() {
   return (
@@ -81,6 +81,11 @@ function Footer() {
               <li>
                 <a href="https://aetherwavestudio.com/static/tutorials.html" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
                   <BookOpen className="h-4 w-4" /> Tutorials
+                </a>
+              </li>
+              <li>
+                <a href="https://chatllm.abacus.ai/RhLptmHbkJ" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+                  <Sparkles className="h-4 w-4" /> ChatLLM by Abacus.ai <ExternalLink className="h-3 w-3 opacity-50" />
                 </a>
               </li>
               <li>

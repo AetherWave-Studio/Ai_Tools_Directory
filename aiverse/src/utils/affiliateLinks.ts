@@ -35,6 +35,11 @@ const affiliateConfigs: AffiliateConfig[] = [
     network: 'partnerstack',
     convertToAffiliate: () => `https://www.synthesia.io/?via=andrew-froehlich`
   },
+  {
+    pattern: /abacus\.ai|chatllm\.abacus/i,
+    network: 'referral',
+    convertToAffiliate: () => `https://chatllm.abacus.ai/RhLptmHbkJ`
+  },
 
   // Future affiliate slots — uncomment and add your IDs when approved
   // {
