@@ -1749,6 +1749,20 @@
       "source": "2024_2025_curated_collection",
       "created_at": "2024-01-01T00:00:00.000Z",
       "updated_at": "2025-08-22T22:32:11.994548Z"
+    },
+    {
+      "id": 126,
+      "name": "Auferet",
+      "description": "AI game master for text adventures and tabletop RPGs that remembers your characters and story and reads your own uploaded lore",
+      "link": "https://auferet.com",
+      "category": "Content Creation",
+      "logo_url": "https://logo.clearbit.com/auferet.com",
+      "screenshot_url": "https://image.thum.io/get/fullpage/https://auferet.com",
+      "featured": false,
+      "popularity_score": 6.5,
+      "source": "2024_2025_curated_collection",
+      "created_at": "2024-01-01T00:00:00.000Z",
+      "updated_at": "2024-01-01T00:00:00.000Z"
     }
   ]
 }
