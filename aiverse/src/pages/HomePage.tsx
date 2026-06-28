@@ -91,7 +91,18 @@ function HomePage() {
         .order('popularity_score', { ascending: false })
 
       if (error) throw error
-      setAllTools(data || [])
+      // De-duplicate: the tools table currently holds triplicate rows from
+      // repeated bulk inserts. Collapse by destination link (fallback to name),
+      // keeping the first occurrence (highest popularity, since ordered desc).
+      // Stays a safety net even after the DB is cleaned of duplicates.
+      const seen = new Set<string>()
+      const deduped = (data || []).filter((t) => {
+        const key = (t.link && t.link.trim() ? t.link.trim() : (t.name || '')).toLowerCase()
+        if (seen.has(key)) return false
+        seen.add(key)
+        return true
+      })
+      setAllTools(deduped)
     } catch (error) {
       console.error('Error loading tools:', error)
     } finally {
