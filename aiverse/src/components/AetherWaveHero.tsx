@@ -277,17 +277,14 @@ const AetherWaveHero = () => {
           </div>
           
           <h1 className="mb-3 flex flex-wrap items-center justify-center gap-3">
-            <span className="heading-hero bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              AetherWave Studio
-            </span>
             <span className="font-['Orbitron'] text-white font-bold text-3xl md:text-4xl lg:text-5xl">
-              Tools We Use
+              Tools We Use &amp; Recommend
             </span>
           </h1>
-          
+
           <p className="body-enhanced text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            We leverage cutting-edge AI technology to create exceptional digital experiences. 
-            Here are the tools that power our creative workflow every day.
+            The AI tools that power our creative workflow every day. Some links below are affiliate
+            links that help support this free directory, at no extra cost to you.
           </p>
         </div>
 

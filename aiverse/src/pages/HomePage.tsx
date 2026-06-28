@@ -13,6 +13,7 @@ import InfiniteScroll from '../components/InfiniteScroll'
 import RecommendationEngine from '../components/RecommendationEngine'
 import AetherWaveHero from '../components/AetherWaveHero'
 import AetherWaveBanner from '../components/AetherWaveBanner'
+import AetherWaveTopHero from '../components/AetherWaveTopHero'
 
 type SortOption = 'popularity' | 'alphabetical' | 'newest'
 type ViewMode = 'grid' | 'list'
@@ -214,10 +215,15 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* AetherWave Studio top-of-funnel hero - the platform behind this directory */}
+        {!category && !searchQuery && !showAdvancedFilters && (
+          <AetherWaveTopHero />
+        )}
+
         {/* Real-time Updates Banner */}
         <RealTimeUpdates />
 
-        {/* AetherWave Studio Hero - only show on homepage without filters */}
+        {/* Partner tools we use + recommend (affiliate strip) - homepage only */}
         {!category && !searchQuery && !showAdvancedFilters && (
           <AetherWaveHero />
         )}
