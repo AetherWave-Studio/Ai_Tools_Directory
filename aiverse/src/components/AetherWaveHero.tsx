@@ -36,6 +36,13 @@ const AetherWaveHero = () => {
       mediaType: 'video'
     },
     {
+      name: 'AtlasCloud',
+      description: 'AI model gateway & inference',
+      logo: '☁️',
+      url: 'https://www.atlascloud.ai?ref=UG6F4N',
+      color: 'from-cyan-500 to-blue-600'
+    },
+    {
       name: 'ElevenLabs',
       description: 'AI voice synthesis & cloning',
       logo: '🎙️',
