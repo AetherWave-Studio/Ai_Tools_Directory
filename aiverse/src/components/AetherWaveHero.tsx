@@ -18,6 +18,15 @@ const AetherWaveHero = () => {
       mediaType: 'video'
     },
     {
+      name: 'Architect Marco (The Sick Team)',
+      description: 'Creators Lounge visuals',
+      logo: '🎧',
+      url: 'https://aetherwavestudio.com/u/djpolomaco',
+      color: 'from-pink-500 to-cyan-500',
+      backgroundMedia: '/assets/marco-bg.mp4',
+      mediaType: 'video'
+    },
+    {
       name: 'SUNO',
       description: 'AI music & song generation',
       logo: '🎵',
@@ -42,15 +51,6 @@ const AetherWaveHero = () => {
       url: 'https://grok.x.ai',
       color: 'from-purple-600 to-blue-600',
       backgroundMedia: '/assets/supergrok-bg.mp4',
-      mediaType: 'video'
-    },
-    {
-      name: 'Canva',
-      description: 'Graphic design & templates',
-      logo: '🎨',
-      url: 'https://canva.com',
-      color: 'from-teal-500 to-purple-600',
-      backgroundMedia: '/assets/canva-bg.mp4',
       mediaType: 'video'
     },
     {
@@ -195,6 +195,15 @@ const AetherWaveHero = () => {
       url: 'https://lumalabs.ai',
       color: 'from-purple-500 to-pink-600',
       backgroundMedia: '/assets/lumapro-bg.mp4',
+      mediaType: 'video'
+    },
+    {
+      name: 'Canva',
+      description: 'Graphic design & templates',
+      logo: '🎨',
+      url: 'https://canva.com',
+      color: 'from-teal-500 to-purple-600',
+      backgroundMedia: '/assets/canva-bg.mp4',
       mediaType: 'video'
     },
     {
